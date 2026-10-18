@@ -1,0 +1,72 @@
+# Student Performance Prediction
+
+## Project Overview
+Student Performance Prediction is a machine learning project that estimates a student's final mathematics grade using study time, school absences, and previous grades.
+
+## Objective
+The objective is to explore how machine learning can use academic data to predict student performance.
+
+## Dataset
+This project uses the UCI Student Performance dataset, containing records from Portuguese secondary schools.
+
+Dataset source: https://archive.ics.uci.edu/dataset/320/student+performance
+
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- UCI Machine Learning Repository
+
+## Machine Learning Algorithm
+**Linear Regression**
+
+## Input Features
+- `studytime`: Weekly study-time category
+- `absences`: Number of school absences
+- `G1`: First-period grade
+- `G2`: Second-period grade
+
+## Target Variable
+- `G3`: Final mathematics grade
+
+## Project Workflow
+1. Load the student dataset.
+2. Select input features and the target variable.
+3. Split the data into training and testing sets.
+4. Train a Linear Regression model.
+5. Evaluate the model using MAE, RMSE, and R-squared.
+6. Visualize actual versus predicted grades.
+7. Generate a sample grade prediction.
+
+## Model Evaluation
+Results on the current test split:
+
+- Mean Absolute Error (MAE): 0.75
+- Root Mean Squared Error (RMSE): 1.17
+- R-squared (R²): 0.859
+
+These are evaluation results for the current train-test split, not a guarantee of performance on other students or datasets. R² is not the same as prediction accuracy.
+
+## Sample Prediction
+For an example student with study-time category 2, 3 absences, G1 = 12, and G2 = 13, the model predicted a final grade of approximately **13.29 out of 20**.
+
+This is an estimate, not a guaranteed grade.
+
+## Limitations
+- The dataset represents students from two Portuguese secondary schools.
+- Previous grades are required to make predictions with this model.
+- The model may not generalize to students from other schools or education systems.
+- Predictions should not be used as the sole basis for academic decisions.
+
+## Future Improvements
+- Develop an interactive web application.
+- Compare Linear Regression with other algorithms.
+- Explore additional features and evaluate performance on different data splits.
+
+## Project Files
+- `Student_Performance_Prediction.ipynb`: Notebook containing the analysis, model training, evaluation, visualization, and sample prediction.
+
+## Author
+Created as part of an AI/ML internship project.
